@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import click, mido
-import tools
+from timecode_tools import tools
 
 # create a global accumulator for quarter_frames
 quarter_frames = [0,0,0,0,0,0,0,0]

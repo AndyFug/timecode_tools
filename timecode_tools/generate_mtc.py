@@ -8,7 +8,8 @@ import time
 import click, mido
 from timecode import Timecode
 
-import tools
+from timecode_tools import tools
+
 
 def send_click(outport, note):
 	msg = mido.Message('note_on', note=note, velocity=127, channel=9)

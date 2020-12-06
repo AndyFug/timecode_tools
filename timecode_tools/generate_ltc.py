@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-from tools import cint, ltc_encode
+from timecode_tools.tools import cint, ltc_encode
 from timecode import Timecode
-import time, os, click
+import click
 
 def write_wave_file(f, data, rate=44100, bits=8):
 	header = gen_wave_header(data, rate=rate, bits=bits)
